@@ -1,17 +1,42 @@
 package lt.vcd;
 
+import java.util.Scanner;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
+        Scanner in=new Scanner(System.in);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
-        }
+                System.out.print("x1: ");
+                int x1=in.nextInt();
+
+                System.out.print("y1: ");
+                int y1=in.nextInt();
+
+                System.out.print("x2: ");
+                int x2=in.nextInt();
+
+                System.out.print("y2: ");
+                int y2=in.nextInt();
+
+                int length=Math.abs(x2 - x1);
+                int width=Math.abs(y1 - y2);
+
+                int s=length*width;
+                int p= 2*(length+width);
+
+                System.out.println("s=" +s);
+                System.out.println("p=" +p);
+
+                in.close();
+
+
+
+
+
+
+
+
+
     }
 }
